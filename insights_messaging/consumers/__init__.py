@@ -7,7 +7,7 @@ log = logging.getLogger(__name__)
 
 
 class Consumer(Watched):
-    def __init__(self, publisher, downloader, engine, redis):
+    def __init__(self, publisher, downloader, engine, redis=None):
         super().__init__()
         self.publisher = publisher
         self.downloader = downloader
